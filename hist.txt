@@ -1,0 +1,255 @@
+    1  sudo yum update
+    2  docker info
+    3  docker --version
+    4  sudo yum install -y docker
+    5  sudo service docker start
+    6  sudo usermod -a -G docker ec2-user
+    7  docker info
+    8  sudo docker info
+    9  docker run
+   10  docker run hello-world
+   11  sudo usermod -a -G docker ec2-user
+   12  sudo docker run hello-world
+   13  sudo docker ps
+   14  sudo docker run hello-world
+   15  history 
+   16  sudo docker ps
+   17  docker inspect
+   18  history
+   19  docker info
+   20  docker run hello-world
+   21  docker ps
+   22  docker container ls-a
+   23  docker container ls -a
+   24  docker container ls-a
+   25  docker container run
+   26  docker run hello-world
+   27  docker container ls -a
+   28  docker pull ubuntu:18.04
+   29  docker pull ubuntu:19.04
+   30  docker inspect ubuntu:18.04
+   31  docker run hello-world
+   32  docker start
+   33  docker run hello-world
+   34  sudo service docker start
+   35  docker inspect ubuntu:18.04
+   36* docker 
+   37  docker history ubuntu:18.04
+   38  docker inspect ubuntu:19.04
+   39  docker inspect ubuntu:19.04 | grep layers
+   40  docker inspect ubuntu:19.04 | grep Layers
+   41  docker inspect ubuntu:19.04 | grep "Layers"
+   42  docker inspect ubuntu:19.04
+   43  docker image ubuntu:19.04
+   44* docker 
+   45  docker image ls -a
+   46  docker inspect ubuntu:19.04
+   47  docker image ls -a
+   48  mkdir lab2
+   49  cd lab2/
+   50  touch Dockerfile
+   51  nano Dockerfile 
+   52  docker build -t ubuntu:18.04 -f Dockerfile
+   53  docker build -t ubuntu:18.04 
+   54  ls
+   55  mv Dockerfile dockerfile
+   56  ls
+   57  cat dockerfile 
+   58  docker build -t ubuntu:18.04 .
+   59  docker image ls -a
+   60  docker image rm 18.04
+   61  docker image rm b69d257cbb09
+   62  docker build -t ubuntu:new .
+   63  docker image ls -a
+   64  cat dockerfile 
+   65  docker inspect ubuntu:new
+   66  docker inspect ubuntu:18.04
+   67  docker inspect ubuntu:new
+   68  docker inspect ubuntu:18.04
+   69  docker inspect ubuntu:new
+   70  cat dockerfile 
+   71  docker image ls -a
+   72  cim dockerfile 
+   73  vim dockerfile 
+   74  docker rmi new'
+   75  docker rmi new
+   76  docker rmi bd2
+   77  clear
+   78  cat dockerfile 
+   79  docker build -t question11 .
+   80  docker image ls -a
+   81  docker inspect question11
+   82  clear
+   83  cat dockerfile 
+   84  vim dockerfile 
+   85  docker image ls -a
+   86  docker rmi 907
+   87  clear
+   88  docker image ls -a
+   89  docker build -t question11 .
+   90  docker image ls -a
+   91  docker inspect question11
+   92  docker inspect ubuntu:18.04
+   93  docker inspect question11
+   94  docker image ls -a
+   95  cat docker 
+   96  docker image ls -a
+   97  cat dockerfile 
+   98  cd
+   99  docker run -d ubuntu:18.04
+  100  docker ps
+  101* docker imag
+  102  docker image ls -a
+  103  docker ps -a
+  104  docker run -itd ubuntu:18.04
+  105  docker image ls -a
+  106  docker run -d ubuntu:18.04
+  107  docker image ls -a
+  108  docker ps
+  109  docker run -itd ubuntu:18.04
+  110* docker stop
+  111* docker run -itd ubuntu:18.04 --name ques13con
+  112  docker run -itd ubuntu:18.04 --name ques13
+  113* 
+  114  docker ps
+  115  docker exec -it b0d67a070518 /bin/bash
+  116  docker ps
+  117  docker cp b0d:/hello.txt .
+  118  cat hello.txt 
+  119  docker stop b0d
+  120  docker rm -f b0d
+  121  docker stop ad0
+  122  docker rm -f ad0
+  123  docker rmi ubuntu:18.04
+  124  docker ls
+  125  docker ps
+  126  docker ps -a
+  127  docker images
+  128  docker rmi f9a
+  129  docker rm -f 56c
+  130  940
+  131  docker rm -f 940
+  132  docker rm -f 295
+  133  docker rmi ubuntu:18.04
+  134  docker images
+  135  docker ps -a
+  136  docker rmi ubuntu:18.04
+  137  docker images
+  138  docker container prune
+  139  docker image prune
+  140  docker ps -a
+  141  socker images
+  142  docker images
+  143  docker rmi f9a8
+  144  docker rmi a010
+  145  docker images
+  146  docker rmi f9a8
+  147  docker images
+  148  docker pull ubuntu:18.04
+  149  ls
+  150  cd lab2/
+  151  ls
+  152  mkdir ques11
+  153  mv dockerfile ques11/
+  154  ls
+  155  mkdir ques22
+  156  cd ques22/
+  157  touch dockerfile
+  158  vi dockerfile 
+  159  history
+  160  docker build -t ubuntu:new .
+  161  docker images
+  162  docker rmi 668
+  163  docker build -t ubuntu:ques22 .
+  164  cat dockerfile 
+  165  docker ps -a
+  166  docker image
+  167* 
+  168  history 
+  169  docker ps -a
+  170  docker images -a
+  171  docker run --name dc2c
+  172  docker run dc2c
+  173  docker run -e USER_TEXT="a good person" dc2c
+  174  nano dockerfile 
+  175  docker run -e USER_TEXT="a good person" dc2c
+  176  You are doing $USER_TEXT
+  177  nano dockerfile 
+  178  mkdir test
+  179  cd test/
+  180  touch dockerfile
+  181  nano dockerfile 
+  182  docker build -t ubuntu:ques22test .
+  183  docker run -e USER_TEXT="a good person" c68c
+  184  ls
+  185  cd ..
+  186  ls
+  187  rm dockerfile 
+  188  mv test/dockerfile .
+  189  ls
+  190  images -ps
+  191  images ps -a
+  192  images
+  193  docker images -a
+  194  docker rmi ques22
+  195  docker rmi dc2c
+  196  docker ps -a
+  197  docker rm -f 0e0b
+  198  docker rm -f de45
+  199  docker rm -f -a
+  200  docker rm -f a
+  201  docker rm -f 
+  202  docker rm -f prune
+  203  docker rm -f e97f
+  204  docker ps -a
+  205  docker rm -f 509f
+  206  ls
+  207  docker build -t ubuntu:ques22 .
+  208  docker run -e USER_TEXT="a good person" c68c
+  209  docker run -e USER_TEXT="better work" c68c
+  210  cat dockerfile 
+  211  docker ps 
+  212  docker ps -a
+  213  docker rm -f 27ff
+  214  docker rm -f 4b87
+  215  docker images
+  216  docker rmi ques22
+  217  docker rmi ques22test
+  218  docker rmi c68c
+  219  docker rmi -f c68c
+  220  docker images
+  221  nano dockerfile 
+  222  docker build -t ubuntu:ques22 .
+  223  docker run -e USER_TEXT="better work" c68c
+  224  docker run -e USER_TEXT="better work" 1e9a
+  225  docker run -e USER_TEXT="remarkable job" 1e9a
+  226  cat dockerfile 
+  227  cd ..
+  228  ls
+  229  mkdir ques23
+  230  cd ques23
+  231  nano dockerfile
+  232  docker build -t ubuntu:ques23 .
+  233  docker run -d -p 80:80 -p 8080:8080 b07d
+  234  nano dockerfile 
+  235  cat dockerfile 
+  236  cd ..
+  237  mkdir ques25
+  238  cd ques25
+  239  nano dockerfile
+  240  docker ps
+  241  docker rm 166d
+  242  docker stop 166d
+  243  docker ps
+  244  nano dockerfile
+  245  docker build -t ubuntu:ques25 .
+  246  nano dockerfile
+  247  docker build -t ubuntu:ques25 .
+  248  docker run -d -p 80:80 f416
+  249  cat dockerfile 
+  250  history
+  251  cd ..
+  252  cd
+  253  ls
+  254  touch hist
+  255  history >> hist
